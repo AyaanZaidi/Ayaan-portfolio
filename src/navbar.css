@@ -1,0 +1,135 @@
+body , html{
+  /* margin: 0; */
+  /* padding: 0; */
+  /* box-sizing: border-box; */
+  background-color: #EFEAE3;
+  overflow-x: hidden;
+}
+.first-main-div{
+    height: 18vh;
+    width: 98vw;
+    position: relative;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid gray;
+    /* border: 2px solid black; */
+  }
+  
+  .nav{
+    padding: 1vw 3vw;
+    width: 94vw;
+    display: flex;
+    align-items: center;
+  justify-content: space-between;
+  }
+  .nav h1{
+    font-size: 30px;
+    background: linear-gradient(to right, black,red);
+    color: transparent;
+    -webkit-background-clip: text;
+    text-shadow: 0 0 50px rgba(255, 0, 0, 0.662);
+    animation: anime 2s infinite alternate;
+  }
+  @keyframes anime {
+    100%{
+    text-shadow: 0 0 40px black;
+    }
+  }
+  .nav-part2{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+  }
+  
+  
+  .nav-part2 h5{
+    padding: 10px 20px;
+    border: 1px solid #8a8a8a89;
+    border-radius: 50px;
+    font-weight: 500;
+    color: #000000bb;
+    font-size: 15px;
+    position: relative;
+    transition: all ease 0.4s;
+    overflow: hidden;
+  }
+  .nav-part2 h5::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+  
+  }
+  .nav-part2 h5:hover::after{
+    bottom: 0;
+    border-radius: 0;
+  }
+  .nav-part2 h5 a{
+    text-decoration: none;
+    color: #000000bb;
+    position: relative;
+    z-index: 9;
+    cursor: pointer;
+  }
+  .nav-part2 h5:hover a{
+    color: #ffff;
+    cursor: pointer;
+  }
+  .ri-menu-line{
+  display: none;
+}
+.ri-close-line{
+    display: none;
+}
+ .toggle-div{
+    display: none;
+}
+  
+  @media screen and (max-width: 768px) {
+      .nav-part2{
+        box-shadow: 2px 2px 7px;
+        border-radius: 12px;
+        background-color: #EFEAE3;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        height: 65vh;
+        width: 96vw;
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin-right: 20px; 
+        margin-top: -540px;
+        transition: all ease 0.9s;
+        /* margin-right: 18px; */
+    }
+    .nav{
+      position: relative;
+    }
+    .nav h5{
+      border: 2px solid black;
+      width: 80vw;
+    }
+
+    .toggleActive{
+        margin-top: 100px;
+    }
+
+
+    .toggle-div{
+      border: 1px solid rgb(187, 186, 186);
+      height: 40px;
+      width: 80px;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+  }

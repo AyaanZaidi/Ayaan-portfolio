@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-about-div {
+    /* border: 2px solid black; */
+    height: 100vh;
+    margin: 30px 10px;
+    padding: 10px 10px;
+    padding-right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.about-div1 {
+    /* border: 2px solid black; */
+    font-size: 22px;
+    min-height: 70vh;
+    width: 50vw;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-div1 h1 {
+    padding-bottom: 10px;
+}
+
+.resume{
+    /* margin-left: -330px; */
+    margin-top: 30px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    height: 43px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+}
+.project{
+    margin-left: 20px;
+    margin-top: 30px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    height: 43px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+}
+
+.about-div2 {
+    height: 500px;
+    width: 380px;
+    background: url('./images/ayaan.jpg');
+    background-size: 390px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+@media screen and (max-width: 1059px) {
+    .about-div2{
+        height: 400px;
+    }
+    .about-div1{
+        width: 70vw;
+        margin-left: 40px
+    } 
+}
+
+@media screen and (max-width: 992px) {
+    .about-div1{
+        font-size: 19px;        
+    }
+}
+@media screen and (max-width: 768px) {
+    .about-div1{
+        font-size: 15px;        
+    }
+}
+@media screen and (max-width: 638px) {
+    .about-div2{
+        /* border: 2px solid black; */
+        height: 390px;
+        background-size: 320px;
+        /* margin-left: 100px; */
+    }
+    .about-div1{
+        font-size: 12px;
+        width: 100vw;        
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main-about-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 170vh;
+    }
+    .about-div2{
+        height: 800px;
+        margin-top: 20px;
+        /* margin-left: 120px; */
+        background-size: 450px;
+    }
+    .about-div1{
+        font-size: 20px;
+        width: 90vw;
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 553px) {
+    .about-div1{
+        font-size: 18px;
+        text-align: center;
+    }
+    .about-div2{
+        margin-left: 30px;
+    }
+} 
+
+@media screen and (max-width: 444px) {
+    .about-div1{
+        font-size: 16px;
+    }
+    .about-div2{
+        background-size: 380px;
+        margin-left: 60px;
+    }
+}
+
+@media screen and (max-width: 364px) {
+    .about-div1{
+        font-size: 14px;
+    }
+    .about-div2{
+        height: 450px;
+        background-size: 360px;
+    }
+}
+
+@media screen and (max-width: 316px) {
+    .project{
+        font-size: 13px;
+    }
+    .resume{
+        font-size: 13px;
+    }
+    .about-div2{
+        height: 450px;
+        /* margin-left: 160px; */
+    }
+}

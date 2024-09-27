@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.skills-main-div {
+    min-height: 130vh;
+    margin-top: -60px;
+
+}
+
+.skills-main-div h1 {
+    text-align: center;
+}
+
+.skill-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.html-box{
+    margin: 60px 60px 0 60px;
+    height: 261px;
+    border-radius: 20px;
+    width: 261px;
+    position: relative;
+    overflow: hidden;
+    padding: 5px;
+}
+.css-box{
+    margin: 60px 60px 0 60px;
+    height: 261px;
+    border-radius: 20px;
+    width: 261px;
+    position: relative;
+    overflow: hidden;
+    padding: 5px;
+}
+.javascript-box{
+    margin: 60px 60px 0 60px;
+    height: 261px;
+    border-radius: 20px;
+    width: 261px;
+    position: relative;
+    overflow: hidden;
+    padding: 5px;
+}
+.react-box{
+    margin: 60px 60px 0 60px;
+    height: 261px;
+    border-radius: 20px;
+    width: 261px;
+    position: relative;
+    overflow: hidden;
+    padding: 5px;
+}
+.nodejs-box{
+    margin: 60px 60px 0 60px;
+    height: 261px;
+    border-radius: 20px;
+    width: 261px;
+    position: relative;
+    overflow: hidden;
+    padding: 5px;
+}
+.mongodb-box{
+    margin: 60px 60px 0 60px;
+    height: 261px;
+    border-radius: 20px;
+    width: 261px;
+    position: relative;
+    overflow: hidden;
+    padding: 5px;
+}
+.html-box::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    height: 600px;
+    width: 200px;
+    background-color: rgb(242, 70, 8);
+    animation: move 1.5s infinite;
+}
+.css-box::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    height: 600px;
+    width: 200px;
+    background-color: royalblue;
+    animation: move 1.5s infinite;
+}
+.javascript-box::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    height: 600px;
+    width: 200px;
+    background-color: gold;
+    animation: move 1.5s infinite;
+}
+.react-box::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    height: 600px;
+    width: 200px;
+    background-color: aqua;
+    animation: move 1.5s infinite;
+}
+.nodejs-box::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    height: 600px;
+    width: 200px;
+    background-color: rgb(10, 188, 10);
+    animation: move 1.5s infinite;
+}
+.mongodb-box::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    height: 600px;
+    width: 200px;
+    background-color: green;
+    animation: move 1.5s infinite;
+}
+
+@keyframes move {
+    100% {
+        transform: translate(-50%, -50%) rotate(225deg);
+    }
+}
+
+.html-skill-div {
+    height: 250px;
+    width: 250px;
+    /* margin: 60px 60px 0 60px; */
+    background-image: url('./images/html.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    box-shadow: 2px 7px 8px gray;
+    background-color: #EFEAE3;
+    position: relative;
+    z-index: 99;
+    /* border: 3px solid red; */
+}
+
+.css-skill-div {
+    height: 250px;
+    width: 250px;
+    background-image: url('./images/css-icon.png');
+    background-size: 180px;
+    background-color: #EFEAE3;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    box-shadow: 2px 7px 8px gray;
+    position: relative;
+    z-index: 99;
+}
+
+.javascript-skill-div {
+    height: 250px;
+    width: 250px;
+    background-image: url('./images/javascript-icon.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #EFEAE3;
+    background-position: center;
+    border-radius: 20px;
+    box-shadow: 2px 7px 8px gray;
+    position: relative;
+    z-index: 99;
+}
+
+.react-skill-div {
+    height: 250px;
+    width: 250px;
+    background-image: url('./images/React-icon.png');
+    background-size: 200px;
+    background-color: #EFEAE3;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    box-shadow: 2px 7px 8px gray;
+    position: relative;
+    z-index: 99;
+}
+
+.nodejs-skill-div {
+    height: 250px;
+    background-color: #EFEAE3;
+    width: 250px;
+    background-image: url('./images/node.png');
+    background-size: 180px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    box-shadow: 2px 7px 8px gray;
+    position: relative;
+    z-index: 99;
+}
+
+.mongodb-skill-div {
+    height: 250px;
+    background-color: #EFEAE3;
+    width: 250px;
+    background-image: url('./images/Mongo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    box-shadow: 2px 7px 8px gray;
+    position: relative;
+    z-index: 99;
+}  
+
+
+@media screen and (max-width:380px) {
+    .html-skill-div{
+        height: 33vh;
+        width: 52vw;
+    }
+    .css-skill-div{
+        height: 33vh;
+        width: 52vw;
+        background-size: 140px;
+    }
+    .javascript-skill-div{
+        height: 33vh;
+        width: 52vw;
+    }
+    .react-skill-div{
+        height: 33vh;
+        width: 52vw;
+        background-size: 140px;
+    }
+    .nodejs-skill-div{
+        height: 33vh;
+        width: 52vw;
+        background-size: 140px;
+    }
+    .mongodb-skill-div{
+        height: 33vh;
+        width: 52vw;
+        background-size: 140px;
+    }
+
+    .html-box{
+        height: 35vh;
+        width: 55vw;
+    }
+    .css-box{
+        height: 35vh;
+        width: 55vw;
+    }
+    .javascript-box{
+        height: 35vh;
+        width: 55vw;
+    }
+    .react-box{
+        height: 35vh;
+        width: 55vw;
+    }
+    .nodejs-box{
+        height: 35vh;
+        width: 55vw;
+    }
+    .mongodb-box{
+        height: 35vh;
+        width: 55vw;
+    }
+    
+
+    
+}
+
+
+
+
